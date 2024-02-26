@@ -6,6 +6,7 @@
 @use "about_author";
 @use "season";
 @use "footer";
+@use "./components/menu_hamburger";
 
 * {
     margin: 0;
@@ -22,7 +23,7 @@ body {
 
 .container {
     max-width: 1024px;
-    margin: 0 auto;
+    margin: 100px auto;
 
     @media (max-width: 767px) {
         width: 80%;
@@ -74,10 +75,18 @@ body {
 .container__flex {
     display: flex;
     justify-content: space-between;
+
+    @media (max-width: 767px) {
+        flex-direction: column;
+    }
 }
 
 .fullHeight {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+    @media (max-width: 767px) {
+        display: block;
+    }
 }

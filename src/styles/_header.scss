@@ -11,6 +11,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        margin: 0 auto;
     }
 
     &__brand {
@@ -40,13 +41,25 @@
 
     @media (max-width:767px) {
         &__nav {
-            position: absolute;
-            display: block;
-            height: 100%;
-            width: 70%;
-            top: 78px;
-            left: 1px;
-            background-color: red;
+            position: fixed;
+            display: flex;
+            justify-content: space-around;
+            flex-direction: column;
+            align-items: center;
+            gap: 0;
+            height: 100vh;
+            width: 100vw;
+            top: 0;
+            left: 0;
+            background-color: lighten(variables.$colorPrimary, 10%);
+            clip-path: circle(0 at 90% -15%);
+            transition: 1s ease-out;
+            pointer-events: none;
+
+            &--is-active {
+                clip-path: circle(1500px at 90% -15%);
+                pointer-events: all;
+            }
         }
     }
 }

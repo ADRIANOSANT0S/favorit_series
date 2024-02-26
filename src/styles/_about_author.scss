@@ -25,9 +25,38 @@
     
     .container__flex {
         padding: 80px 0;
-        &:nth-child(odd) {
+    
+        &:nth-child(odd) { 
             border-top: 1px solid variables.$borderColor;
             border-bottom: 1px solid variables.$borderColor;
+        }
+    }
+
+    @media (max-width: 767px) {
+        &__person {
+            &__img {
+                height: 200px;
+                width: 100%;
+                display: block;
+            }
+        }
+
+        &__life {
+            width: 100%;
+            margin-top: 24px;
+
+            &__text {
+                margin-bottom: 24px;
+            }
+
+            .button {
+                display: block;
+                margin-top: 24px;
+            }
+        }
+
+        .container__flex {
+            padding: 64px 0 0;
         }
     }
 
@@ -42,6 +71,10 @@
 
         &__life {
             width: 55%;
+        }
+
+        .text--small {
+            padding-bottom: 8px;
         }
     }
 }
