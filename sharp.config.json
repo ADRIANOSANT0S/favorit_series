@@ -1,5 +1,13 @@
-{
+{   
+    "jpeg": {
+        "quality": 75
+    },
+    "webp": {
+        "nearLossless": true,
+        "quality": 75
+    },
     "png": {
+        "palette": true,
         "quality": 75
     }
 }

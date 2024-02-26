@@ -1,3 +1,83 @@
+@use "variables";
+@use "./components/button";
+@use "header";
+@use "hero";
+@use "infos";
+@use "about_author";
+@use "season";
+@use "footer";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: Montserrat ,sans-serif;
+}
+
 body {
-    background-color: gold;
+    background-color: variables.$colorPrimary;
+}
+
+.container {
+    max-width: 1024px;
+    margin: 0 auto;
+
+    @media (max-width: 767px) {
+        width: 80%;
+    }
+
+    @media (min-width: 768px) and (max-width: 1023px) {
+        width: 90%;
+    }
+}
+
+@mixin title($fontSize: 48px) {
+    font-size: $fontSize;
+    line-height: $fontSize + 10px;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+@mixin text($fontSize: 16px) {
+    font-size: $fontSize;
+    line-height: $fontSize + 10px;
+}
+
+.title--large {
+    @include title;
+    color: variables.$textColorPrimary;
+}
+
+.title {
+    @include title(24px);
+    color: variables.$textColorSecondary;
+    text-transform: uppercase;
+}
+.title--small {
+    @include title(14px);
+    color: variables.$textColorSecondary;
+}
+
+.text {
+    @include text;
+    color: variables.$textColorPrimary;
+}
+
+.text--small {
+    @include text(12px);
+    color: variables.$textColorSecondary;
+    text-transform: uppercase;
+}
+
+.container__flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.fullHeight {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }

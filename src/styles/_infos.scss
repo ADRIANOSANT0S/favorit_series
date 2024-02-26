@@ -1,0 +1,36 @@
+.infos {
+    margin: 16em 0;
+
+    &__about {
+
+        &__history {
+            width: 70%;
+
+            :nth-child(1) {
+                margin-bottom: 24px;
+            }
+        }
+    }
+
+    &__series {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 16em;
+        
+        &__watching {
+            max-width: 200px;
+            width: 100%;
+        }
+
+        img {
+            height: 400px;
+        }
+
+        @media (min-width: 768px) and (max-width: 1024px){
+            img {
+                height: 280px;
+            }
+        }
+    }
+}

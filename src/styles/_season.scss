@@ -1,0 +1,64 @@
+@use "./variables.scss";
+
+.season {
+
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .title--large {
+        display: block;
+    }
+
+    &__character {
+        &__img {
+            height: 450px;
+            width: 590px;
+            display: block;
+        }
+    }
+
+    &__plot {
+        width: 35%;
+    }
+    
+    .container__flex {
+        padding: 80px 0;
+        &:nth-child(odd) {
+            border-top: 1px solid variables.$borderColor;
+            border-bottom: 1px solid variables.$borderColor;
+            flex-direction: row-reverse;
+        }
+    }
+
+    &__trailer {
+        margin: 0 auto;
+    }
+
+    @media (min-width: 768px) and (max-width: 1023px) {
+        &__character {
+            &__img {
+                width: 100%;
+            }
+        }
+
+        .container__flex {
+            display: flex;
+            flex-direction: column;
+
+            &:nth-child(odd) {
+                display: contents;
+            }
+        }
+
+        .fullHeight {
+            width: 100%;
+            margin: 50px 0;
+        }
+
+        .button {
+            margin-top: 24px;
+        }
+    }
+}

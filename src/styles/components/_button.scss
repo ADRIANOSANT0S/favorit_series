@@ -1,0 +1,17 @@
+@use "../variables";
+
+.button {
+    text-align: center;
+    border: 2px solid variables.$colorSecondary;
+    color: variables.$colorSecondary;
+    padding: 8px 16px; 
+    border-radius: 24px;
+    font-size: 16px;
+    transition: background-color .2s ease-in;
+    width: 120px;
+
+    &:hover {
+        color: variables.$textColorPrimary;
+        background-color: variables.$colorSecondary;
+    }
+}

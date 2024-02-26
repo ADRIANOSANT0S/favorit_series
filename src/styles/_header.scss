@@ -1,0 +1,52 @@
+@use "variables";
+
+.header {
+    position: sticky;
+    top: 0;
+    left: 0; 
+    z-index: 1;
+    background-color: variables.$colorPrimary;
+    
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__brand {
+        height: 70px;
+    }
+
+    &__nav {
+        display: flex;
+        gap: 8px;
+
+        &__item {
+            padding: 8px;
+
+            &__link {
+                color: variables.$textColorPrimary;
+                text-transform: uppercase;
+                font-weight: bold;
+
+                &--is-hover:hover {
+                    color: variables.$colorSecondary;
+                    border-bottom: 1px solid variables.$colorSecondary;
+                    transition: color .5s ease;
+                }
+            }
+        }
+    }
+
+    @media (max-width:767px) {
+        &__nav {
+            position: absolute;
+            display: block;
+            height: 100%;
+            width: 70%;
+            top: 78px;
+            left: 1px;
+            background-color: red;
+        }
+    }
+}

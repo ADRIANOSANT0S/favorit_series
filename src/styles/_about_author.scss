@@ -1,0 +1,47 @@
+@use "./variables.scss";
+
+.about__author {
+
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .title--large {
+        display: block;
+    }
+
+    &__person {
+        &__img {
+            height: 320px;
+            width: 330px;
+            display: block;
+        }
+    }
+
+    &__life {
+        width: 60%;
+    }
+    
+    .container__flex {
+        padding: 80px 0;
+        &:nth-child(odd) {
+            border-top: 1px solid variables.$borderColor;
+            border-bottom: 1px solid variables.$borderColor;
+        }
+    }
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+        &__person {
+            &__img {
+                height: 330px;
+                width: 270px;
+                display: block;
+            }
+        }
+
+        &__life {
+            width: 55%;
+        }
+    }
+}

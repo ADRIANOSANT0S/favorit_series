@@ -7,20 +7,217 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/8d65c13f29.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./styles/main.scss">
 </head>
 <body>
     <header class="header">
         <div class="container">
-            <h1 class="header__brand">
-                <a href="#">
-                
-                </a>
+            <h1>
+                <img class="header__brand" src="./images/logo.jpg" alt="Logo Net">
             </h1>
-            <div class="header__login">
-                
-            </div>
+            <nav>
+                <ul class="header__nav">
+                    <li class="header__nav__item">
+                        <a class="header__nav__item__link header__nav__item__link--is-hover" href="#">Home</a>
+                    </li>
+                    <li class="header__nav__item">
+                        <a class="header__nav__item__link header__nav__item__link--is-hover" href="#">About Series</a>
+                    </li>
+                    <li class="header__nav__item">
+                        <a class="header__nav__item__link header__nav__item__link--is-hover" href="#">About Authors</a>
+                    </li>
+                    <li class="header__nav__item">
+                        <a class="header__nav__item__link header__nav__item__link--is-hover" href="#">Season</a>
+                    </li>
+                </ul>
+            </nav>
         </div>
     </header>
+    <main>
+        <section id="home" class="hero">
+            <div class="container">
+                <a class="hero__link button" href="https://www.netflix.com/br-en/title/80002479">Watch Now</a>
+            </div>
+        </section>
+        <section class="infos">
+            <div class="container">
+                <div class="infos_about container__flex">
+                    <ul class="infos__about__series fullHeight">
+                        <li class="infos__about__series__items">
+                            <h3 class="title--small">Genre</h3>
+                            <span class="text--small">Drama crime</span>
+                        </li>
+                        <li class="infos__about__series__items">
+                            <h3 class="title--small">Creator</h3>
+                            <span class="text--small">Stephen Knight</span>
+                        </li>
+                        <li class="infos__about__series__items">
+                            <h3 class="title--small">Screenwriter</h3>
+                            <span class="text--small">Stephen Knight</span>
+                        </li>
+                    </ul>
+                
+                    <div class="infos__about__history">
+                        <div class="infos__about__history__item">
+                            <h3 class="title--small">HISTORY</h3>
+                            <p class="text">
+                                Peaky Blinders is a British crime drama series created by Stephen Knight in 2013 for BBC Two and follows the Shelby crime family in Birmingham in the 1920s.
+                            </p>
+                        </div>
+                        <div class="infos__about__history__item">
+                            <h3 class="title--small">HISTORY</h3>
+                            <p class="text">
+                                The first season of the gangster series, consisting of six episodes, has an audience of 2.4 million viewers. On November 8, 2014, the BBC announced that it was extending the series for a third season, which started on May.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="infos__series">
+                    <div class="infos__series__watching fullHeight">
+                        <h2 class="title--large">Drama Series</h2>
+                        <h3 class="title">National Television Awards (2019)</h3>
+                        <a href="#" class="button">
+                            <span>More</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                    <img src="./images/serie_year.webp" alt="Thomas Shelby With your brother in car">
+                </div>
+            </div>
+        </section>
+        <section class="about__author">
+            <div class="container">
+                <h2 class="title--large">Starring</h2>
+                <div class="container__flex">
+                    <div class="about__author__person">
+                        <img class="about__author__person__img" src="./images/Tommy.jpg" alt="Tomas Shelby">
+                        <span class="text--small">character: TOMMY SHELBY</span>
+                    </div>
+                    <div class="about__author__life fullHeight">
+                        <h2 class="title">Cillian Murphy</h2>
+                        <p class="text about__author__life__text">
+                            Film and theater actor from Ireland. At sixteen, he suddenly became interested in acting after one of his drama lessons. As a child, the actor was fond of music and dreamed of a career as a rock star, and even, together with his younger brother, Paidy, created the group "The Sons of Mr. Green Genes".
+                        </p>
+                        <span class="text--small">
+                            "I learned long ago to hate my enemies, but I've never loved one before."
+                        </span>
+                        <a href="#" class="button">
+                            <span>More</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="container__flex">
+                    <div class="about__author__person">
+                        <img class="about__author__person__img" src="./images/Arthur.jpg" alt="Arthur Shelby">
+                        <span class="text--small">character: ARTHUR SHELBY</span>
+                    </div>
+                    <div class="about__author__life fullHeight">
+                        <h2 class="title">PAUL ANDERSON</h2>
+                        <p class="text about__author__life__text">
+                            Is a British actor. Anderson decided to pursue acting in the mid 2000s, after working for many years as a ticket scalper and aspiring musician and enrolled at the Webber Douglas Academy of Dramatic Art. Anderson's break came when, in 2013, he was cast as a main character in the BBC Two show Peaky Blinders
+                        </p>
+                        <span class="text--small">
+                            "I learned long ago to hate my enemies, but I've never loved one before."
+                        </span>
+                        <a href="#" class="button">
+                            <span>More</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="container__flex">
+                    <div class="about__author__person">
+                        <img class="about__author__person__img" src="./images/Polly.jpg" alt="Polly">
+                        <span class="text--small">character: ELIZABETH "POLLY"</span>
+                    </div>
+                    <div class="about__author__life fullHeight">
+                        <h2 class="title">HELEN MCCRONY</h2>
+                        <p class="text about__author__life__text">
+                            Award-winning actress Helen Elizabeth McCrory was born in London, England, to Welsh-born Anne (Morgans) Scottish-born lain McCrory, a diplomat (from Glasgow). She trained at the Chang-Ren Nian. She began her career on stage in the UK. She won the Manchester Evening News' Best Actress Award.
+                        </p>
+                        <span class="text--small">
+                            "Sometimes the women have to take over. Like in the war."
+                        </span>
+                        <a href="#" class="button">
+                            <span>More</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>  
+        <section class="season">
+            <div class="container">
+                <h2 class="title--large">Season</h2>
+                <div class="container__flex">
+                    <div class="season__character">
+                        <img class="season__character__img" src="./images/season1.png" alt="First season Peaky Blinders">
+                    </div>
+                    <div class="season__plot fullHeight">
+                        <h2 class="title">01 Season</h2>
+                        <p class="text season__plot__text">
+                            01 SEASON
+                            The First World War has just ended. Many of the veterans who returned home were unemployed. In Birmingham,pro-communist sentiments are gaining ground.
+                        </p>
+                        <p class="text season__plot__text">
+                            Some of the areas are under the control of a group called "Peaky Blinders" due to the use of original weapons - razor blades sewn into the caps' visors.
+                        </p>
+                        <a href="#" class="button">
+                            <span>More</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="container__flex">
+                    <div class="season__character">
+                        <img class="season__character__img" src="./images/season2.jpg" alt="Second season Peaky Blinders">
+                    </div>
+                    <div class="season__plot fullHeight">
+                        <h2 class="title">02 Season</h2>
+                        <p class="text season__plot__text">
+                            02 SEASON
+                            Peaky Blinders are gaining tremendous influence in the city, and their thriving business is at its peak. However, the ambitious Thomas understands that it is necessary to expand the boundaries of influence.
+                        </p>
+                        <p class="text season__plot__text">
+                            He plans to move the clan to London and seize new spheres of influence in the capital, acquire high-ranking acquaintances, and bring the group to a legal level.
+                        </p>
+                        <a href="#" class="button">
+                            <span>More</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="container__flex">
+                    <div class="season__character">
+                        <img class="season__character__img" src="./images/season3.jpg" alt="Third season Peaky Blinders">
+                    </div>
+                    <div class="season__plot fullHeight">
+                        <h2 class="title">03 Season</h2>
+                        <p class="text season__plot__text">
+                            03 SEASON
+                            There's a traitor in Peaky Blinders. Tommy decides to rob a workshop with armored vehicles at the Lanchester factory. Lizzie confesses to Polly that their relationship with the leader of the Peaky Blinders resumed after Grace's death.
+                        </p>
+                        <p class="text season__plot__text">
+                            Tommy finds out that everything is not so easy for Linda when this "holy" woman bargains with him for every pound.
+                        </p>
+                        <a href="#" class="button">
+                            <span>More</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="season__trailer">
+                    <iframe width="850" height="559" src="https://www.youtube.com/embed/PxZ5gGfPtCQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write;  gyroscope; picture-in-picture;"></iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <p class="text--small">All rights reserved. &copy; 2024</p>
+        </div>
+    </footer>
 </body>
 </html>
